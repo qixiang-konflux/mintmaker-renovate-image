@@ -16,6 +16,8 @@ metadata:
   name: mintmaker-renovate-image-on-push
   namespace: qwan1-tenant
 spec:
+  timeouts:
+    pipeline: "2h0m0s"
   params:
   - name: git-url
     value: '{{source_url}}'
